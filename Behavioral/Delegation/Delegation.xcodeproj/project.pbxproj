@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15F8C76249798F200099ADE /* DelegateInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F8C75249798F200099ADE /* DelegateInfoViewController.swift */; };
 		A16272F42487FA9E009F5851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16272F32487FA9E009F5851 /* AppDelegate.swift */; };
 		A16272F62487FA9E009F5851 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16272F52487FA9E009F5851 /* SceneDelegate.swift */; };
 		A16272F82487FA9E009F5851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16272F72487FA9E009F5851 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A15F8C75249798F200099ADE /* DelegateInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateInfoViewController.swift; sourceTree = "<group>"; };
 		A16272F02487FA9E009F5851 /* Delegation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delegation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16272F32487FA9E009F5851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16272F52487FA9E009F5851 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A16272F32487FA9E009F5851 /* AppDelegate.swift */,
 				A16272F52487FA9E009F5851 /* SceneDelegate.swift */,
 				A16272F72487FA9E009F5851 /* ViewController.swift */,
+				A15F8C75249798F200099ADE /* DelegateInfoViewController.swift */,
 				A16272F92487FA9E009F5851 /* Main.storyboard */,
 				A16272FC2487FA9F009F5851 /* Assets.xcassets */,
 				A16272FE2487FA9F009F5851 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				A16272F82487FA9E009F5851 /* ViewController.swift in Sources */,
 				A16272F42487FA9E009F5851 /* AppDelegate.swift in Sources */,
+				A15F8C76249798F200099ADE /* DelegateInfoViewController.swift in Sources */,
 				A16272F62487FA9E009F5851 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
