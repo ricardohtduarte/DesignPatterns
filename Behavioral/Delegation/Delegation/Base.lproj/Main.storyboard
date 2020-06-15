@@ -85,31 +85,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="USr-aY-frH">
-                                <rect key="frame" x="20" y="140" width="374" height="122"/>
+                                <rect key="frame" x="20" y="143" width="374" height="122"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="YwP-jh-3vM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <state key="normal">
-                                    <string key="title">The delegation pattern enables an object to use another “helper” object to provide data or perform a task rather than do the task itself</string>
+                                    <string key="title">The delegation pattern enables an object to use another “helper” object to provide data or perform a task rather than do the task itself.</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="frL-l0-v4k">
-                                <rect key="frame" x="20" y="291" width="374" height="203"/>
+                                <rect key="frame" x="20" y="291" width="374" height="221"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="203" id="ovo-6D-xds"/>
+                                    <constraint firstAttribute="height" constant="221" id="ovo-6D-xds"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <state key="normal">
                                     <string key="title">An object needing a delegate, also known as the delegating object. It’s the object that has a delegate. The delegate is usually held as a weak property to avoid a retain cycle where the delegating object retains the delegate, which retains the delegating object.</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-MN-H1Y">
-                                <rect key="frame" x="20" y="530" width="374" height="105"/>
+                                <rect key="frame" x="20" y="533" width="374" height="105"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="105" id="Gez-k1-WpD"/>
@@ -119,30 +121,31 @@
                                 <state key="normal" title="A delegate protocol, which defines the methods a delegate may or should implement."/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="icl-GY-KkX">
-                                <rect key="frame" x="20" y="671" width="374" height="105"/>
+                                <rect key="frame" x="20" y="668" width="374" height="105"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="105" id="E27-3J-oFj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <state key="normal" title="A delegate, which is the helper object that implements the delegate protocol."/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="USr-aY-frH" firstAttribute="leading" secondItem="hdR-Qd-af3" secondAttribute="leading" constant="20" id="9qb-ED-zR6"/>
-                            <constraint firstItem="icl-GY-KkX" firstAttribute="top" secondItem="Agt-MN-H1Y" secondAttribute="bottom" constant="36" id="EWi-CA-Fr5"/>
+                            <constraint firstItem="icl-GY-KkX" firstAttribute="top" secondItem="Agt-MN-H1Y" secondAttribute="bottom" constant="30" id="EWi-CA-Fr5"/>
                             <constraint firstItem="hdR-Qd-af3" firstAttribute="trailing" secondItem="Agt-MN-H1Y" secondAttribute="trailing" constant="20" id="EWj-ma-lqt"/>
-                            <constraint firstItem="Agt-MN-H1Y" firstAttribute="top" secondItem="frL-l0-v4k" secondAttribute="bottom" constant="36" id="FsC-am-VlH"/>
+                            <constraint firstItem="Agt-MN-H1Y" firstAttribute="top" secondItem="frL-l0-v4k" secondAttribute="bottom" constant="21" id="FsC-am-VlH"/>
                             <constraint firstItem="hdR-Qd-af3" firstAttribute="trailing" secondItem="frL-l0-v4k" secondAttribute="trailing" constant="20" id="Gsc-pU-lWd"/>
                             <constraint firstItem="icl-GY-KkX" firstAttribute="leading" secondItem="hdR-Qd-af3" secondAttribute="leading" constant="20" id="L8y-oa-SVz"/>
                             <constraint firstItem="hdR-Qd-af3" firstAttribute="trailing" secondItem="icl-GY-KkX" secondAttribute="trailing" constant="20" id="Npb-n5-xtZ"/>
-                            <constraint firstItem="hdR-Qd-af3" firstAttribute="bottom" secondItem="icl-GY-KkX" secondAttribute="bottom" constant="32" id="RPN-Ft-mct"/>
+                            <constraint firstItem="hdR-Qd-af3" firstAttribute="bottom" secondItem="icl-GY-KkX" secondAttribute="bottom" constant="35" id="RPN-Ft-mct"/>
                             <constraint firstItem="frL-l0-v4k" firstAttribute="leading" secondItem="hdR-Qd-af3" secondAttribute="leading" constant="20" id="RYu-y3-j7U"/>
                             <constraint firstItem="1Bl-b2-A6l" firstAttribute="top" secondItem="hdR-Qd-af3" secondAttribute="top" constant="30" id="USG-eF-Nuy"/>
-                            <constraint firstItem="frL-l0-v4k" firstAttribute="top" secondItem="USr-aY-frH" secondAttribute="bottom" constant="29" id="X1Z-tm-3Eb"/>
-                            <constraint firstItem="USr-aY-frH" firstAttribute="top" secondItem="1Bl-b2-A6l" secondAttribute="bottom" constant="37" id="Xav-O3-vJ4"/>
+                            <constraint firstItem="frL-l0-v4k" firstAttribute="top" secondItem="USr-aY-frH" secondAttribute="bottom" constant="26" id="X1Z-tm-3Eb"/>
+                            <constraint firstItem="USr-aY-frH" firstAttribute="top" secondItem="1Bl-b2-A6l" secondAttribute="bottom" constant="40" id="Xav-O3-vJ4"/>
                             <constraint firstItem="1Bl-b2-A6l" firstAttribute="leading" secondItem="hdR-Qd-af3" secondAttribute="leading" constant="50" id="Xyy-ma-uRa"/>
                             <constraint firstItem="hdR-Qd-af3" firstAttribute="trailing" secondItem="USr-aY-frH" secondAttribute="trailing" constant="20" id="glm-qm-Vx8"/>
                             <constraint firstItem="Agt-MN-H1Y" firstAttribute="leading" secondItem="hdR-Qd-af3" secondAttribute="leading" constant="20" id="swx-zh-F9q"/>
