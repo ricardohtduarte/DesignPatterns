@@ -35,10 +35,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="um5-WR-E8n" kind="show" id="kHb-Sw-cKC"/>
+                                    <action selector="didTapStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P1y-YZ-JRd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Start to delegate information about this Design Pattern" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drX-Y6-AMh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Start to delegate information about this Design Pattern" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drX-Y6-AMh">
                                 <rect key="frame" x="35" y="292" width="344" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="9lq-mR-p6U"/>
@@ -62,21 +62,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="designPatternInfoLabel" destination="drX-Y6-AMh" id="DKa-rM-byI"/>
+                        <outlet property="startButton" destination="wPq-RH-yP3" id="RSW-L5-NBE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Delegate Info View Controller-->
         <scene sceneID="uef-eI-oBp">
             <objects>
-                <viewController id="um5-WR-E8n" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DelegateInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="um5-WR-E8n" customClass="DelegateInfoViewController" customModule="Delegation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cVg-by-fea">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bl-b2-A6l">
-                                <rect key="frame" x="50" y="30" width="314" height="73"/>
+                                <rect key="frame" x="50" y="74" width="314" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="Qki-vH-OfK"/>
                                 </constraints>
@@ -85,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="USr-aY-frH">
-                                <rect key="frame" x="20" y="143" width="374" height="122"/>
+                                <rect key="frame" x="20" y="187" width="374" height="122"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="YwP-jh-3vM"/>
@@ -96,9 +100,12 @@
                                 <state key="normal">
                                     <string key="title">The delegation pattern enables an object to use another “helper” object to provide data or perform a task rather than do the task itself.</string>
                                 </state>
+                                <connections>
+                                    <action selector="didTapInfoButton:" destination="um5-WR-E8n" eventType="touchUpInside" id="084-XQ-l7Z"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="frL-l0-v4k">
-                                <rect key="frame" x="20" y="291" width="374" height="221"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="frL-l0-v4k">
+                                <rect key="frame" x="20" y="335" width="374" height="231"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="221" id="ovo-6D-xds"/>
@@ -109,9 +116,12 @@
                                 <state key="normal">
                                     <string key="title">An object needing a delegate, also known as the delegating object. It’s the object that has a delegate. The delegate is usually held as a weak property to avoid a retain cycle where the delegating object retains the delegate, which retains the delegating object.</string>
                                 </state>
+                                <connections>
+                                    <action selector="didTapInfoButton:" destination="um5-WR-E8n" eventType="touchUpInside" id="v6z-6I-Yak"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-MN-H1Y">
-                                <rect key="frame" x="20" y="533" width="374" height="105"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-MN-H1Y">
+                                <rect key="frame" x="20" y="591" width="374" height="105"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="105" id="Gez-k1-WpD"/>
@@ -119,9 +129,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="A delegate protocol, which defines the methods a delegate may or should implement."/>
+                                <connections>
+                                    <action selector="didTapInfoButton:" destination="um5-WR-E8n" eventType="touchUpInside" id="R0W-58-niM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="icl-GY-KkX">
-                                <rect key="frame" x="20" y="668" width="374" height="105"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="icl-GY-KkX">
+                                <rect key="frame" x="20" y="722" width="374" height="105"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="105" id="E27-3J-oFj"/>
@@ -130,14 +143,17 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <state key="normal" title="A delegate, which is the helper object that implements the delegate protocol."/>
+                                <connections>
+                                    <action selector="didTapInfoButton:" destination="um5-WR-E8n" eventType="touchUpInside" id="slO-bJ-tiJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="USr-aY-frH" firstAttribute="leading" secondItem="hdR-Qd-af3" secondAttribute="leading" constant="20" id="9qb-ED-zR6"/>
-                            <constraint firstItem="icl-GY-KkX" firstAttribute="top" secondItem="Agt-MN-H1Y" secondAttribute="bottom" constant="30" id="EWi-CA-Fr5"/>
+                            <constraint firstItem="icl-GY-KkX" firstAttribute="top" secondItem="Agt-MN-H1Y" secondAttribute="bottom" constant="26" id="EWi-CA-Fr5"/>
                             <constraint firstItem="hdR-Qd-af3" firstAttribute="trailing" secondItem="Agt-MN-H1Y" secondAttribute="trailing" constant="20" id="EWj-ma-lqt"/>
-                            <constraint firstItem="Agt-MN-H1Y" firstAttribute="top" secondItem="frL-l0-v4k" secondAttribute="bottom" constant="21" id="FsC-am-VlH"/>
+                            <constraint firstItem="Agt-MN-H1Y" firstAttribute="top" secondItem="frL-l0-v4k" secondAttribute="bottom" constant="25" id="FsC-am-VlH"/>
                             <constraint firstItem="hdR-Qd-af3" firstAttribute="trailing" secondItem="frL-l0-v4k" secondAttribute="trailing" constant="20" id="Gsc-pU-lWd"/>
                             <constraint firstItem="icl-GY-KkX" firstAttribute="leading" secondItem="hdR-Qd-af3" secondAttribute="leading" constant="20" id="L8y-oa-SVz"/>
                             <constraint firstItem="hdR-Qd-af3" firstAttribute="trailing" secondItem="icl-GY-KkX" secondAttribute="trailing" constant="20" id="Npb-n5-xtZ"/>
@@ -154,6 +170,12 @@
                         <viewLayoutGuide key="safeArea" id="hdR-Qd-af3"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Af-Dr-cj7"/>
+                    <connections>
+                        <outletCollection property="configureInfoButtons" destination="USr-aY-frH" collectionClass="NSMutableArray" id="SuD-Jb-TBG"/>
+                        <outletCollection property="configureInfoButtons" destination="frL-l0-v4k" collectionClass="NSMutableArray" id="zo7-hX-myo"/>
+                        <outletCollection property="configureInfoButtons" destination="Agt-MN-H1Y" collectionClass="NSMutableArray" id="kB3-kF-Y45"/>
+                        <outletCollection property="configureInfoButtons" destination="icl-GY-KkX" collectionClass="NSMutableArray" id="KWn-i6-9Yx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDT-fg-4ny" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

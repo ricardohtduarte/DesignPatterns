@@ -10,9 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var designPatternInfoLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        startButton.layer.cornerRadius = 30
+    }
+
+    @IBAction func didTapStartButton(_ sender: Any) {
+        guard let delegateInfoViewController = storyboard?.instantiateViewController(identifier: "DelegateInfoViewController") as? DelegateInfoViewController else {
+            return
+        }
+        delegateInfoViewController.delegate = self
+        present(delegateInfoViewController, animated: true)
     }
 }
 
+extension ViewController: DesignPatternInfoDelegate {
+    func didTapInfoButton(text: String) {
+        designPatternInfoLabel.text = text
+    }
+}

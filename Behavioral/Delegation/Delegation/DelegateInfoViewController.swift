@@ -8,23 +8,28 @@
 
 import UIKit
 
+protocol DesignPatternInfoDelegate: class {
+    func didTapInfoButton(text: String)
+}
+
 class DelegateInfoViewController: UIViewController {
+
+    weak var delegate: DesignPatternInfoDelegate!
+
+    @IBOutlet var configureInfoButtons: [UIButton]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureInfoButtons.forEach { $0.layer.cornerRadius = 30 }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapInfoButton(_ sender: Any) {
+        guard
+            let button = sender as? UIButton,
+            let text = button.titleLabel?.text else {
+            return
+        }
+        delegate?.didTapInfoButton(text: text)
+        dismiss(animated: true, completion: nil)
     }
-    */
-
 }
