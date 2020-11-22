@@ -8,6 +8,6 @@ I used Swift Playgrounds as a mean to write and test these small code fragments 
 
 These examples are divided into three categories:
 
-- Behavioural - identify common communication patterns among objects increasing flexibility in carrying out communication
-- Structural - ease the software design by identifying a simple way to realize relationships among entities
-- Creational - design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
+- __Behavioural__ - identify common communication patterns among objects increasing flexibility in carrying out communication
+- __Structural__ - ease the software design by identifying a simple way to realize relationships among entities
+- __Creational__ - design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
