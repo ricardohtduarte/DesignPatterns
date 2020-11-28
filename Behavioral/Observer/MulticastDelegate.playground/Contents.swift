@@ -1,6 +1,6 @@
 import UIKit
 
-// Reference: 
+// Reference:
 
 ////////////////////////////////////////////////////
 /// Multicast Delegate / Delegates composition /////
